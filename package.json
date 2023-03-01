@@ -1,0 +1,26 @@
+{
+	"name": "@esthe/totp",
+	"version": "1.0.0",
+	"description": "A TOTP / HOTP implementation",
+	"scripts": {
+		"build": "node ./esbuild.js && tsc"
+	},
+	"exports": {
+		"node": "./dist/index-node.js",
+		"default": "./dist/index.js"
+	},
+	"types": "./dist/index.d.ts",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.51.0",
+		"@typescript-eslint/parser": "^5.51.0",
+		"esbuild": "^0.17.6",
+		"eslint": "^8.33.0",
+		"eslint-plugin-unicorn": "^45.0.2",
+		"prettier": "^2.8.4",
+		"typescript": "^4.0.0"
+	},
+	"files": [
+		"dist"
+	],
+	"type": "module"
+}
